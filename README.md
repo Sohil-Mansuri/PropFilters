@@ -86,7 +86,7 @@ cd PropFilters
 dotnet run --project PropFilters
 ```
 
-The API will start at `https://localhost:7xxx` / `http://localhost:5xxx` (see `Properties/launchSettings.json` for the exact ports).
+The API will start at `https://localhost:7009` / `http://localhost:5064` (see `Properties/launchSettings.json` for the exact ports).
 
 OpenAPI docs are available at `/openapi/v1.json` when running in Development mode.
 

@@ -5,7 +5,7 @@ namespace PropFilters.PropFilter
 {
     public class NestedFieldProjector
     {
-        private static readonly Dictionary<Type, Dictionary<string, PropertyInfo>> PropCache = new();
+        private static readonly Dictionary<Type, Dictionary<string, PropertyInfo>> PropCache = [];
 
         public object Project(object source, FilterNode tree)
         {
@@ -16,8 +16,8 @@ namespace PropFilters.PropFilter
         public List<object> ProjectList<T>(List<T> source, FilterNode tree)
         {
             if (source is null) return [];
-            if (tree is null) return source.Cast<object>().ToList();
-            return source.Select(item => Project(item, tree)).ToList();
+            if (tree is null) return [.. source.Cast<object>()];
+            return [.. source.Select(item => Project(item, tree))];
         }
 
         private object ProjectObject(object source, FilterNode tree)
@@ -63,8 +63,8 @@ namespace PropFilters.PropFilter
                 {
                     var count = Math.Min(tree.SliceCount.Value, items.Count);
                     items = tree.FromEnd
-                        ? items.Skip(items.Count - count).ToList()
-                        : items.Take(count).ToList();                 
+                        ? [.. items.Skip(items.Count - count)]
+                        : [.. items.Take(count)];
                 }
 
                 if (tree.IsLeaf)

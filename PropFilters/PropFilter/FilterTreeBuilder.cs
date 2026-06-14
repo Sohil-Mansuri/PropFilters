@@ -71,7 +71,7 @@
 
                 if (!string.IsNullOrEmpty(annotation))
                 {
-                    if (annotation.StartsWith("^"))
+                    if (annotation.StartsWith('^'))
                     {
                         if (int.TryParse(annotation[1..], out var n) && n > 0)
                         { sliceCount = n; fromEnd = true; }
