@@ -1,0 +1,42 @@
+{
+  "info": {
+    "_postman_id": "283f67d9-8292-423e-b586-11f9d297a315",
+    "name": "PropFilters",
+    "description": "Created By : Sohil Mansuri",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "28763933"
+  },
+  "item": [
+    {
+      "name": "PropFilters",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"CheckIn\": \"2026-09-20\",\r\n    \"CheckOut\": \"2026-09-25\",\r\n    \"Occupancies\": [\r\n        {\r\n            \"Adults\": 2,\r\n            \"Ages\": []\r\n        }\r\n    ],\r\n    \"PropFilters\": [\r\n        \"hotel.HotelId\",\r\n        \"hotel.SupplierName\",\r\n        \"hotel.PriceInfo.BasePrice\",\r\n        \"hotel.PriceInfo.Currency\",\r\n        \"hotel.Images\",\r\n        \"content.HotelId\",\r\n        \"content.Name\",\r\n        \"content.HotelContact.CityName\",\r\n        \"content.Images[1].Url\"\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7009/api/content/v1/result",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7009",
+          "path": [
+            "api",
+            "content",
+            "v1",
+            "result"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
