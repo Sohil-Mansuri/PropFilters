@@ -1,0 +1,164 @@
+﻿{
+  "Token": "abc123xyz789",
+  "HotelCount": 1,
+  "HasErrors": false,
+  "Hotel": [
+    {
+      "HotelId": "HTL10001",
+      "SearchKey": "SRCH20260613HTL10001",
+      "SupplierId": "SUP001",
+      "SupplierCode": "BOOKING",
+      "SupplierName": "Booking Supplier",
+      "PriceInfo": {
+        "CurrencyCode": "INR",
+        "TotalPrice": 12500.00,
+        "BasePrice": 11000.00,
+        "TotalTax": 1500.00,
+        "AppliedDeal": 500.00,
+        "VendorCommission": 300.00
+      },
+      "Refundable": "Yes",
+      "AvailableRooms": 5,
+      "AggregatorCode": "AGG001",
+      "RateCodes": [
+        "RATE_DELUXE",
+        "RATE_BREAKFAST_INCLUDED"
+      ]
+    }
+  ],
+  "Content": [
+    {
+      "HotelId": "HTL10001",
+      "Name": "Grand Palace Hotel",
+      "AccommodationType": "Hotel",
+      "StarRating": 5,
+      "Popularity": 92.5,
+      "Score": 4.7,
+      "Description": "A luxury hotel located in the heart of the city offering premium rooms, restaurants, spa and conference facilities.",
+      "HotelChain": {
+        "Id": "CHAIN001",
+        "Name": "Grand Hotels Group"
+      },
+      "HotelBrands": [
+        {
+          "Id": "BRAND001",
+          "Name": "Grand Palace"
+        }
+      ],
+      "Facilities": [
+        {
+          "Title": "Free WiFi",
+          "IsFree": true,
+          "Icon": "wifi",
+          "Description": "High speed internet available in all rooms and public areas."
+        },
+        {
+          "Title": "Swimming Pool",
+          "IsFree": true,
+          "Icon": "pool",
+          "Description": "Outdoor swimming pool available for guests."
+        },
+        {
+          "Title": "Airport Transfer",
+          "IsFree": false,
+          "Icon": "car",
+          "Description": "Paid airport pickup and drop service."
+        }
+      ],
+      "Images": [
+        {
+          "Url": "https://example.com/images/hotel-main.jpg",
+          "ImageType": "Exterior",
+          "MainPhoto": true,
+          "Type": "JPG",
+          "Resolution": "1200x800"
+        },
+        {
+          "Url": "https://example.com/images/hotel-room.jpg",
+          "ImageType": "Room",
+          "MainPhoto": false,
+          "Type": "JPG",
+          "Resolution": "1200x800"
+        }
+      ],
+      "Neighbourhoods": [
+        {
+          "Id": "NH001",
+          "Title": "City Center",
+          "DistanceInKm": 1.2
+        }
+      ],
+      "Landmarks": [
+        {
+          "Id": "LM001",
+          "Title": "Central Mall",
+          "DistanceInKm": 0.8
+        },
+        {
+          "Id": "LM002",
+          "Title": "Airport",
+          "DistanceInKm": 12.5
+        }
+      ],
+      "HotelContact": {
+        "Phone": "+91-9876543210",
+        "Email": "contact@grandpalacehotel.com",
+        "Website": "https://www.grandpalacehotel.com",
+        "Address": "123 MG Road, City Center",
+        "PostalCode": "395007",
+        "CountryCode": "IN",
+        "CountryName": "India",
+        "CityName": "Surat",
+        "StateName": "Gujarat"
+      },
+      "Sustainability": [
+        {
+          "CertificateType": "Green Hotel Certification",
+          "CertificateSource": "Eco Tourism Board",
+          "Icon": "leaf",
+          "Definition": "Hotel follows sustainable energy and waste management practices."
+        }
+      ],
+      "RatingSources": [
+        {
+          "Source": "Guest Reviews",
+          "Remarks": "Excellent service and clean rooms",
+          "Rating": 4.7,
+          "Count": 1250
+        },
+        {
+          "Source": "Travel Portal",
+          "Remarks": "Highly recommended",
+          "Rating": 4.5,
+          "Count": 850
+        }
+      ],
+      "HotelPolicies": [
+        {
+          "PolicyType": "CheckIn",
+          "Contains": [
+            "Valid ID proof required",
+            "Check-in starts after 2 PM"
+          ]
+        },
+        {
+          "PolicyType": "Cancellation",
+          "Contains": [
+            "Free cancellation up to 24 hours before check-in"
+          ]
+        }
+      ],
+      "CheckInTime": "14:00",
+      "CheckOutTime": "12:00",
+      "HotelMappings": [
+        {
+          "Provider": "SupplierA",
+          "SupplierName": "Booking Supplier",
+          "HotelId": "SUP_HTL_10001",
+          "Confidence": 98.5
+        }
+      ],
+      "DistanceInKm": 2.3
+    }
+  ]
+}
